@@ -1,0 +1,147 @@
+body {
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #ffffff;
+}
+.img1{
+position: absolute;
+top: 10px;
+font-size: 20px;
+left: 10px;
+font-weight: bold;
+width: 300px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+.img2{
+position: absolute;
+top:365px;
+left: 10px;
+width: 300px;
+font-size: 20px;
+font-weight: bold;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+.mag{
+position: absolute;
+top: 10px;
+left: 500px;
+font-size: 20px;
+font-weight: bold;
+width: 250px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+.phase{
+position: absolute;
+top: 10px;
+left:800px;
+font-size: 20px;
+font-weight: bold;
+width: 250px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+
+.low{
+position: absolute;
+top: 10px;
+left: 1100px;
+font-size: 20px;
+font-weight: bold;
+width: 250px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+.high{
+position: absolute;
+top: 60px;
+left: 1100px;
+font-size: 20px;
+font-weight: bold;
+width: 250px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+
+.uniform_mag{
+position: absolute;
+top: 60px;
+left: 500px;
+font-size: 20px;
+font-weight: bold;
+width: 250px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+.uniform_phase{
+position: absolute;
+top: 60px;
+left:800px;
+font-size: 20px;
+font-weight: bold;
+width: 250px;
+color: rgb(0, 0, 0);
+background-color: #815c5d; 
+border-radius: 20px;
+text-align: center;
+}
+.output{
+position: absolute;
+outline: none;
+display: inline-block;
+border: outset;
+background-color: #815c5d;
+border-radius: 50%;
+color: rgb(0, 0, 0);
+width: 85px;
+height: 85px;
+top: 15px;
+right: 50px;
+text-align: center;
+align-items: center;
+}
+
+.uniform_mag:hover {
+background-color: #b6898a; 
+}
+.uniform_phase:hover {
+background-color: #b6898a; 
+}
+.output:hover {
+background-color: #b6898a; 
+}
+.low:hover {
+background-color: #b6898a; 
+}
+.high:hover {
+background-color: #b6898a; 
+}
+.mag:hover {
+background-color: #b6898a; 
+}
+.phase:hover {
+background-color: #b6898a; 
+}
+.img1:hover {
+background-color: #b6898a; 
+}
+.img2:hover {
+background-color: #b6898a; 
+}

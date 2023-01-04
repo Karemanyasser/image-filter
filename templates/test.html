@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title> Image Proccessing</title>
+    <script src="https://unpkg.com/konva@8.3.14/konva.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="icon" href="../static/assets/images/icon.png" type="image/icon type">
+    <link rel="stylesheet"  href="../static/assets/css/test.css">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- Cropper CSS -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css'>
+    <!-- Cropper JS -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js'></script>
+</head>
+<body>
+    <div id="container"></div>
+    <div class="img1">
+        <input type="file" id="file"  accept="image/jpeg, image/png, image/jpg" >
+    </div>
+    <div class="img2">
+        <input type="file" id="file1" accept="image/jpeg, image/png, image/jpg"> 
+    </div>
+    <div class="mag">
+        <input type="checkbox" id="mag" >
+        <label for="mag">Select Magnitude</label><br>
+    </div>
+    <div class="phase">
+        <input type="checkbox" id="phase" >
+        <label for="phase">Select Phase</label><br>
+    </div>
+    <div class="low">
+        <input type="checkbox" id="low" >
+        <label for="low">Low Pass Filter</label><br>
+    </div>
+    <div class="high">
+        <input type="checkbox" id="high" >
+        <label for="high">High Pass Filter</label><br>
+    </div>
+    <div class="uniform_mag">
+        <input type="checkbox" id="uniform_mag" >
+        <label for="uniform_mag">Uniform Magnitude</label><br>
+    </div>
+    <div class="uniform_phase">
+        <input type="checkbox" id="uniform_phase" >
+        <label for="uniform_phase">Uniform Phase</label><br>
+    </div>
+    <div id="output">
+        <button class="output" type="submit" onclick='Reconstruct()'> Output </button>
+    </div>
+
+    
+    <script src="../static/assets/js/test.js"></script>
+</body>
+</html>
+
