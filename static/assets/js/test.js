@@ -323,31 +323,24 @@ return disabled
 
 
 function Reconstruct(){
-//     var coordinates = {
-//   'Mag_rectangle_x: ' : mag_rect.x() ,
-//     'Mag_rectangle_y: ' : mag_rect.y() ,
-//     'Mag_rectangle_width: ' : Math.abs(mag_rect.scaleX()*mag_rect.width()) ,
-//     'Mag_rectangle_height: ' : Math.abs(mag_rect.scaleY()* mag_rect.height()) ,
-//     'Phase_rectangle_x: ' :phase_rect.x() ,
-//     'Phase_rectangle_y: ' : phase_rect.y() ,
-//     'Phase_rectangle_width: ' : Math.abs(phase_rect.scaleX()*phase_rect.width()) ,
-//     'Phase_rectangle_height: ' : Math.abs(phase_rect.scaleY()* phase_rect.height()) }
-// ;
-// var coordinates = JSON.stringify(coordinates); 
-
-$.ajax({
-type: "POST",
-url: "/",
-contentType: "application/json",
-data: {
-   'Mag_rectangle_x: ' : mag_rect.x() ,
+    var coordinates = {
+  'Mag_rectangle_x: ' : mag_rect.x() ,
     'Mag_rectangle_y: ' : mag_rect.y() ,
     'Mag_rectangle_width: ' : Math.abs(mag_rect.scaleX()*mag_rect.width()) ,
     'Mag_rectangle_height: ' : Math.abs(mag_rect.scaleY()* mag_rect.height()) ,
     'Phase_rectangle_x: ' :phase_rect.x() ,
     'Phase_rectangle_y: ' : phase_rect.y() ,
     'Phase_rectangle_width: ' : Math.abs(phase_rect.scaleX()*phase_rect.width()) ,
-    'Phase_rectangle_height: ' : Math.abs(phase_rect.scaleY()* phase_rect.height()) },
+    'Phase_rectangle_height: ' : Math.abs(phase_rect.scaleY()* phase_rect.height()) }
+;
+//var coordinates = JSON.stringify(coordinates); 
+
+$.ajax({
+type: "POST",
+url: "/",
+contentType: "application/json",
+data: JSON.stringify(coordinates),
+processData: false,
 error: function(data){
               console.log("upload error" , data);
               console.log(data.getAllResponseHeaders());
